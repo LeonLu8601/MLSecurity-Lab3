@@ -71,6 +71,7 @@ data) as a function of the fraction of channels pruned.
     ![Lab3_plt](https://github.com/LeonLu8601/MLSecurity-Lab3/blob/ad92b83a4a057ccebae89993143cacb6fa220586/Lab3_plt.png)
 
 5. whether the pruning defense works for this model? If not, why not? 
+
     The pruning defense does not work well for this model. The adaptive attack may be used to attack the model. The attacker uses the clean and poisoned dataset to train the model on pruned model and depruning to get this model. By attacking by this method, neurons can be activated by both clean dataset and poisoned dataset which means that we can only get the model with low attack success rate with low clean classification accuracy. And in the plot above, we can see that the the attack success rate is dropping after the accuracy begins to drop. 
 
 ## V. Important Notes
